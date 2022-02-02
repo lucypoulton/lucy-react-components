@@ -1,0 +1,17 @@
+.fadeContainer {
+  opacity: 0;
+  transform: scaleY(1.1) translateY(3em);
+
+  transform-origin: top;
+
+  transition: opacity 0.5s var(--transition),
+  translate 0.5s var(--transition),
+  transform 0.5s var(--transition) !important;
+
+  margin: 1em;
+
+  &.fadeIn {
+    opacity: 1;
+    transform: unset;
+  }
+}

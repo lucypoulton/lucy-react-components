@@ -1,0 +1,24 @@
+@use 'src/styles/typography';
+@use 'src/styles/colours';
+
+.lucy .navbar {
+  padding: 0.7em;
+  margin: 0;
+  color: var(--light-primary);
+  background-image: var(--accent);
+
+  .lightswitch {
+    width: 20px;
+    right: 1em;
+    stroke: white;
+    fill: none;
+    position: absolute;
+    top: -20px;
+    transition: top .5s cubic-bezier(1,-.75,.4,1);
+
+    &.pulled {
+      top: 0;
+      transition: top .5s cubic-bezier(.4, 0, 0, 1.75);
+    }
+  }
+}

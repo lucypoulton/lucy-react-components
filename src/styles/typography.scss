@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..700&family=Roboto+Mono&display=swap');
+
+@mixin body {
+  font-family: 'Lexend', sans-serif;
+}
+
+.lucy {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    text-align: center;
+  }
+
+  h1 {
+    @include body;
+    font-size: 2rem;
+  }
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    @include body;
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: var(--colour-foreground);
+    transition: font-weight .4s var(--transition),
+        transform .4s var(--transition);
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.05);
+      font-weight: 450;
+    }
+  }
+
+  code, .mono {
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .fg-light {
+    color: var(--light-primary);
+  }
+
+  .fg-dark {
+    color: var(--dark-primary);
+  }
+}

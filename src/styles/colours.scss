@@ -1,0 +1,34 @@
+.lucy {
+  --red: #ff9999;
+  --yellow: #ffcc99;
+  --green: #99ffcc;
+  --cyan: #99ffff;
+  --blue: #99b8ff;
+  --purple: #b399ff;
+  --pink: #f799ff;
+
+
+  /* dark colours */
+  --red-dark: #b35959;
+  --yellow-dark: #cc8e5c;
+  --green-dark: #59b386;
+  --cyan-dark: #59b3b3;
+  --blue-dark: #5974b3;
+  --purple-dark: #6f59b3;
+  --pink-dark: #ab59b3;
+
+  /* greyscale */
+  --dark-primary: #1d1f21;
+  --dark-secondary: #2b2e31;
+  --light-secondary: #b7aeb7;
+  --light-primary: #e7e4e7;
+
+  --shadow: 0 0 4px 4px #0001;
+
+  --transition: cubic-bezier(.9,-.5,.1,1.49);
+}
+
+.accent {
+  background: var(--accent) !important;
+  color: var(--light-primary) !important;
+}

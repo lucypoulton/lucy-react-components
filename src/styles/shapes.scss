@@ -1,0 +1,33 @@
+@use 'colours';
+@use 'typography';
+
+@mixin button {
+    border-radius: 1em;
+    box-shadow: var(--shadow);
+    border: none;
+}
+.lucy {
+    button, .button {
+        @include typography.body;
+        @include button;
+        font-size: 1em;
+        font-weight: 300 !important;
+        padding: .5em;
+        transition: all .4s var(--transition);
+
+        .theme-dark & {
+            background: var(--dark-secondary);
+            color: var(--light-primary);
+        }
+
+        .theme-light & {
+            background: var(--light-secondary);
+            color: var(--dark-primary);
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            font-weight: 450 !important;
+        }
+    }
+}

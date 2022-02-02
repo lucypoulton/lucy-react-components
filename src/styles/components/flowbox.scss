@@ -1,0 +1,23 @@
+@use 'src/styles/colours';
+@use 'src/styles/shapes';
+
+.lucy {
+  .flowbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    flex-wrap: wrap;
+
+    > * {
+      text-align: center;
+      @include shapes.button;
+      flex-grow: 1;
+      flex-basis: var(--basis);
+      margin: var(--margin);
+      margin-top: 0;
+    }
+  }
+  &.theme-dark .flowbox > * {
+    background-color: var(--dark-secondary);
+  }
+}
