@@ -1,7 +1,7 @@
-import React from "react";
+import React, {ReactChild} from "react";
 
 export interface NavbarProps {
-    content: string,
+    content: ReactChild,
     lightswitch?: any,
     pulled?: boolean,
     onSwitchPull?: () => void
