@@ -13,7 +13,8 @@
         font-size: 1em;
         font-weight: 300 !important;
         padding: .5em;
-        transition: all .4s var(--transition);
+        transition: background .4s,
+        tranform .4s var(--transition);
 
         .theme-dark & {
             background: var(--dark-secondary);
