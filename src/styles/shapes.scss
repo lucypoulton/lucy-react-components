@@ -29,5 +29,13 @@
             transform: scale(1.05);
             font-weight: 450 !important;
         }
+
+        > * {
+            transition: transform .4s var(--transition);
+        }
+
+        &:hover > * {
+            transform: scale(1.05);
+        }
     }
 }
