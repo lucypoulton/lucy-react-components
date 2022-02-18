@@ -33,7 +33,7 @@
         }
 
         > * {
-            transition: transform .4s var(--transition), font-weight .4s var(--transition);
+            transition: transform .4s var(--transition);
         }
 
         &:hover > * {
